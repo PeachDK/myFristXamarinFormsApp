@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:myFristXamarinFormsApp"
+             x:Class="myFristXamarinFormsApp.MainPage">
+    <Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            x:Name="resultText" 
+            FontSize="48" 
+            FontAttributes="Bold" 
+            BackgroundColor="Black" 
+            Text="0" 
+            TextColor="White" 
+            HorizontalTextAlignment="End" 
+            VerticalTextAlignment="Center" 
+            LineBreakMode="NoWrap" 
+            Grid.ColumnSpan="4" />
+
+
+        <Button Text="7" Grid.Row="1" Grid.Column="0" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+        <Button Text="8" Grid.Row="1" Grid.Column="1" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+        <Button Text="9" Grid.Row="1" Grid.Column="2" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+
+        <Button Text="4" Grid.Row="2" Grid.Column="0" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+        <Button Text="5" Grid.Row="2" Grid.Column="1" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+        <Button Text="6" Grid.Row="2" Grid.Column="2" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+
+        <Button Text="1" Grid.Row="3" Grid.Column="0" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+        <Button Text="2" Grid.Row="3" Grid.Column="1" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+        <Button Text="3" Grid.Row="3" Grid.Column="2" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36"/>
+        <Button Text="0" Grid.Row="4" Grid.Column="0" Clicked="OnButtonSelected" BackgroundColor="White" TextColor="Black" BorderRadius="0" FontSize="36" Grid.ColumnSpan="3"/>
+
+        <Button Text="/" Grid.Row="1" Grid.Column="3" Clicked="OnButtonSelected" BackgroundColor="#FFA500" TextColor="White" BorderRadius="0" FontSize="36"/>
+        <Button Text="X" Grid.Row="2" Grid.Column="3" Clicked="OnButtonSelected" BackgroundColor="#FFA500" TextColor="White" BorderRadius="0" FontSize="36"/>
+        <Button Text="-" Grid.Row="3" Grid.Column="3" Clicked="OnButtonSelected" BackgroundColor="#FFA500" TextColor="White" BorderRadius="0" FontSize="36"/>
+        <Button Text="+" Grid.Row="4" Grid.Column="3" Clicked="OnButtonSelected" BackgroundColor="#FFA500" TextColor="White" BorderRadius="0" FontSize="36"/>
+
+        <Button Text="C" Grid.Row="5" Grid.Column="0" Clicked="OnClearSelected" BackgroundColor="#808080" TextColor="White" BorderRadius="0" FontSize="36"/>
+        <Button Text="=" Grid.Row="5" Grid.Column="1" Clicked="OnCalculate"     BackgroundColor="#FFA500" Grid.ColumnSpan="3" TextColor="White" BorderRadius="0" FontSize="36"/>
+    </Grid>
+
+</ContentPage>
